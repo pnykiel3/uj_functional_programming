@@ -1,0 +1,2 @@
+Assignment 1 presentation \
+[![Assignment 1 presentation](https://github.com/pnykiel3/uj_functional_programming/blob/main/src/img/pic1.png)](https://github.com/pnykiel3/uj_functional_programming/blob/main/src/vid/rec1.mp4)
