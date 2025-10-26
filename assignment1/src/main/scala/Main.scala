@@ -3,6 +3,9 @@ import cask.model.Response
 
 object Main extends cask.MainRoutes {
 
+  override def host: String = "0.0.0.0"
+  override def port: Int = 8080
+
   private def isSorted[A](list: List[A], compare: (A, A) => Boolean): Boolean = {
     if (list.length < 2) return true
     val pairs = list.zip(list.tail)
