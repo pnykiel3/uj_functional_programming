@@ -1,7 +1,7 @@
 # Programowanie funkcyjne
 
 
-Zadanie 1
+## Zestaw 1
 
 ✅ 3.0 Zaimplementuj funkcję isSorted, która sprawdza czy dana funkcja jest posortowana zgodnie z podaną funkcją porównawczą
 
@@ -17,4 +17,4 @@ Wszystkie zadania w jedynym commit [Link](https://github.com/pnykiel3/uj_functio
 
 Kod: [Link do zadania 1](https://hub.docker.com/r/pnykiel3/cask-asgn1)
 
-Nagranie: https://github.com/user-attachments/assets/d5c64052-4e22-4151-ba8e-2190b5357a74
+![Demo](https://github.com/user-attachments/assets/d5c64052-4e22-4151-ba8e-2190b5357a74)
