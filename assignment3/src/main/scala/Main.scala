@@ -8,16 +8,13 @@ object Main extends cask.MainRoutes {
 
   private def tail[A](list: List[A]): List[A] = {
     list match {
-      case Nil => throw new NoSuchElementException("tail of empty list")
+      case Nil => throw new NoSuchElementException("Your list is empty!")
       case _ :: tail => tail
-      case 0 => list.tail()
     }
   }
 
-  private def drop[A](lis)
-
   @cask.post("/tail")
-  def isSortedEndpoint(request: cask.Request): Response[ujson.Value] = {
+  def tailEndpoint(request: cask.Request): Response[ujson.Value] = {
     try {
       val data = ujson.read(request.text())
       val list = data("list").arr.toList.map(_.num.toInt)
@@ -27,7 +24,6 @@ object Main extends cask.MainRoutes {
       case e: Exception => cask.Response(ujson.Obj("error" -> e.getMessage), statusCode = 400)
     }
   }
-
 
   @cask.get("/")
   def hello(): String = "Aplikacja Cask gotowa. Użyj tras POST."
