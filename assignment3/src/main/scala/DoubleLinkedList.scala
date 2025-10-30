@@ -84,5 +84,15 @@ class DoubleLinkedList[A](elements: List[A] = List()) {
 
   def getSize: Int = size
 
+  def toList: List[A] = {
+    var result = List[A]()
+    var current = head
+    while (current.isDefined) {
+      result = result :+ current.get.data
+      current = current.get.next
+    }
+    result
+  }
+
 }
 
