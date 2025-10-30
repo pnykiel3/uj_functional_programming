@@ -1,5 +1,5 @@
 
-class DoubleLinkedList[A] {
+class DoubleLinkedList[A](elements: List[A] = List()) {
 
   private class Node(var data: A) {
     var prev: Option[Node] = None
@@ -9,6 +9,8 @@ class DoubleLinkedList[A] {
   private var head: Option[Node] = None
   private var tail: Option[Node] = None
   private var size: Int = 0
+
+  elements.foreach(push_back)
 
   def push_back (element: A): Unit = {
     val newNode = new Node(element)
