@@ -28,11 +28,12 @@ Kod: [Link do zadania 1](https://hub.docker.com/r/pnykiel3/cask-asgn1)
 - sbt
 - vim  
 
-[Link do commita](https://github.com/pnykiel3/uj_functional_programming/commit/16a7396fcbc0def6f0434f39ee7e2ad74dc70922)  
+[Link do commita](https://github.com/pnykiel3/uj_functional_programming/commit/e02d12608662d73ad3e80f0503e572f76baab362)  
 Kod: [Link do zadania 2](https://hub.docker.com/r/pnykiel3/assignment2)
 ## Zestaw 3  - Scala, Docker, Cask
 
 ✅ 3.0 Zaimplementuj endpoint, który zwróci wynik funkcji tail, która usuwa pierwszy element z listy
+
 [Link do commit 1](https://github.com/pnykiel3/uj_functional_programming/commit/9a360ca72625bf04425e228a36c4a095c60137c7)
 
 
