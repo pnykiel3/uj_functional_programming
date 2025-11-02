@@ -21,7 +21,15 @@ Kod: [Link do zadania 1](https://hub.docker.com/r/pnykiel3/cask-asgn1)
 
 ## Zestaw 2 - Docker
 
-W pracy
+✅   Stwórz obraz dockerowy, który bazuje na najnowszej wersji Ubuntu LTS oraz który zawiera paczki:
+    - Java 8
+    - Python 3
+    - Scala (dowolna wersja)
+    - sbt
+    - vim
+    [Link do commita](https://github.com/pnykiel3/uj_functional_programming/commit/16a7396fcbc0def6f0434f39ee7e2ad74dc70922)
+    Kod: [Link do zadania 2](https://hub.docker.com/r/pnykiel3/assignment2)
+
 
 ## Zestaw 3  - Scala, Docker, Cask
 
