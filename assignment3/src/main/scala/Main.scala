@@ -13,6 +13,18 @@ object Main extends cask.MainRoutes {
     }
   }
 
+  def drop[A](list: DoubleLinkedList[A], n: Int): DoubleLinkedList[A] = {
+    if (n < 0) throw new IllegalArgumentException("n must be non-negative")
+    if (n > list.getSize) throw new IllegalArgumentException("n is larger than the list size")
+    var i = 0
+
+    while (i < n && !list.isEmpty) {
+      list.pop_back()
+      i += 1
+    }
+    list
+  }
+
   @cask.post("/tail")
   def tailEndpoint(request: cask.Request): Response[ujson.Value] = {
     try {
@@ -25,9 +37,31 @@ object Main extends cask.MainRoutes {
     }
   }
 
-  @cask.get("/")
-  def hello(): String = "Aplikacja Cask gotowa. Użyj tras POST."
-  println(s"Serwer działa pod adresem: http://localhost:8080/")
-  initialize()
+  @cask.post("/drop")
+  def dropEndpoint(request: cask.Request): Response[ujson.Value] = {
+    try {
+      val data = ujson.read(request.text())
+      val listData = data("list").arr.toList.map(_.num.toInt)
+      val n = data("n").num.toInt
+      val list = new DoubleLinkedList[Int](listData)
+      drop(list, n)
 
+      val resultList = list.toList
+      cask.Response(
+      ujson.Obj("drop result" -> ujson.Arr(resultList.map(x => ujson.Num(x.toDouble)): _*)),
+      statusCode = 200)
+    }
+    catch {
+    case e: Exception => 
+      cask.Response(ujson.Obj("error" -> e.getMessage), statusCode = 400)
+    }
+  }
+
+  @cask.get("/")
+  def hello(): String = {
+    println(s"Server is running at: http://localhost:8080/")
+    "Cask application is ready. Use POST routes."
+  }
+
+  initialize()
 }
