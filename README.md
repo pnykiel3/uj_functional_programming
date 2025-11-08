@@ -28,12 +28,19 @@ Kod: [Link do zadania 1](https://hub.docker.com/r/pnykiel3/cask-asgn1)
 - sbt
 - vim  
 
-[Link do commita](https://github.com/pnykiel3/uj_functional_programming/commit/e02d12608662d73ad3e80f0503e572f76baab362)  
+[Link do commit](https://github.com/pnykiel3/uj_functional_programming/commit/e02d12608662d73ad3e80f0503e572f76baab362)  
 Kod: [Link do zadania 2](https://hub.docker.com/r/pnykiel3/assignment2)
 ## Zestaw 3  - Scala, Docker, Cask
 
 ✅ 3.0 Zaimplementuj endpoint, który zwróci wynik funkcji tail, która usuwa pierwszy element z listy
+![Demo](https://github.com/user-attachments/assets/d018a14f-9e3c-4e6a-bb41-6282e92e712a)
 
-[Link do commit 1](https://github.com/pnykiel3/uj_functional_programming/commit/9a360ca72625bf04425e228a36c4a095c60137c7)
+✅ 3.0 Zaimplementuj endpoint, zwróci wynik funkcji drop, która usuwa n elementów z listy dwukierunkowej
+![Demo](https://github.com/user-attachments/assets/7f98086a-0a73-4f2b-9666-9e7eb0105901)
+
+✅ 3.0 Zaimplementuj endpoint, zwróci wynik funkcji dropWhile, która usuwa n elementów z listy dwukierunkowej, które spełniają warunek funkcji (parametr); należy wykorzystać podejście pattern match
+![Demo](https://github.com/user-attachments/assets/8d125cfa-01c2-4551-8c21-48b475a6743a)
+
+Wszystkie zadania w jedynym commit [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/Main.scala)
 
 
