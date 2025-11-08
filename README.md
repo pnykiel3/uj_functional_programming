@@ -13,7 +13,7 @@
 
 ✅ 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej
 
-Wszystkie zadania w jedynym commit [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment1/src/main/scala/Main.scala)
+Plik Main.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment1/src/main/scala/Main.scala)
 
 Kod: [Link do zadania 1](https://hub.docker.com/r/pnykiel3/cask-asgn1)
 
@@ -41,6 +41,6 @@ Kod: [Link do zadania 2](https://hub.docker.com/r/pnykiel3/assignment2)
 ✅ 3.0 Zaimplementuj endpoint, zwróci wynik funkcji dropWhile, która usuwa n elementów z listy dwukierunkowej, które spełniają warunek funkcji (parametr); należy wykorzystać podejście pattern match
 ![Demo](https://github.com/user-attachments/assets/8d125cfa-01c2-4551-8c21-48b475a6743a)
 
-Wszystkie zadania w jedynym commit [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/Main.scala)
-
+Plik Main.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/Main.scala)
+Plik DoubleLinkedList.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/DoubleLinkedList.scala)
 
