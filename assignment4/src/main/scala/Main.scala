@@ -24,6 +24,27 @@ object Main extends cask.MainRoutes {
     }
   }
 
+  def variance (list: List[Double]) : Option[Double] = {
+    if (list.isEmpty || list.length < 2) {
+      None
+    } else {
+      val mean = list.sum / list.length
+      val sumOfSquares = list.map(x => math.pow(x - mean, 2))
+      Some(sumOfSquares.sum / (list.length - 1))
+    }
+  }
+
+  @cask.postJson("/variance")
+  def varianceEndpoint(list: List[Double]): cask.Response[ujson.Value] = {
+    val result = variance(list)
+    result match {
+      case Some(newValue) =>
+        cask.Response(ujson.Num(newValue), statusCode = 200)
+      case None =>
+        cask.Response(ujson.Obj("error" -> s"Incorrect input list for variance calculation."), statusCode = 400)
+    }
+  }
+
   @cask.get("/")
   def hello(): String = {
     println(s"Server is running at: http://localhost:8080/")
