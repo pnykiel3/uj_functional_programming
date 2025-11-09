@@ -50,3 +50,6 @@ Plik DoubleLinkedList.scala [Link](https://github.com/pnykiel3/uj_functional_pro
 
 ✅ 3.5 Zaimplementuj endpoint, który zwróci wariancję z listy; do implementacji wykorzystać należy typ opcjonalny
 [Commit](https://github.com/pnykiel3/uj_functional_programming/commit/c8ae0a7d83abab5d4ae75024fb8a92773dde2c21)
+
+✅ 4.0 Zaimplementuj endpoint, który zwróci listę (option), która jest wynikiem połączenia dwóch list (option); w przypadku gdy jedna z list jest None, funkcja powinna zwrócić None
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/dc10acbeec684aa4d248db5f27b721ca24b2814e)
