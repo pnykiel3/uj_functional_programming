@@ -45,6 +45,25 @@ object Main extends cask.MainRoutes {
     }
   }
 
+  def listConcat[A](list0: Option[List[A]], list1: Option[List[A]]): Option[List[A]] = {
+    (list0, list1) match {
+      case (Some(l0), Some(l1)) => Some(l0 ::: l1)
+      case _ => None
+    }
+  }
+
+  @cask.postJson("/listConcat")
+  def listConcatEndpoint(list0: List[Int] = null, list1: List[Int] = null): cask.Response[ujson.Value] = {
+    val result = listConcat(Option(list0), Option(list1))
+    result match {
+      case Some(newList) =>
+        val arr = ujson.Arr(newList.map(n => ujson.Num(n)): _*)
+        cask.Response(arr, statusCode = 200)
+      case None =>
+        cask.Response(ujson.Obj("error" -> "Incorrect input. Please provide two valid lists."), statusCode = 400)
+    }
+  }
+
   @cask.get("/")
   def hello(): String = {
     println(s"Server is running at: http://localhost:8080/")
