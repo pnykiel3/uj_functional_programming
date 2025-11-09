@@ -43,4 +43,8 @@ Kod: [Link do zadania 2](https://hub.docker.com/r/pnykiel3/assignment2)
 
 Plik Main.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/Main.scala)
 Plik DoubleLinkedList.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/DoubleLinkedList.scala)
+## Zestaw 3  - Scala, Docker, Cask
+
+✅ 3.0 Zaimplementuj endpoint, który zwróci taki sam wynik jak zad.1 4.5 (append) ale wykorzysta typ opcjonalny
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/28fd9a19f9fc033350f5ac4be6c8a08c60c801c8)
 
