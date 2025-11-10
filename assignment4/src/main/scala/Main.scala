@@ -64,6 +64,21 @@ object Main extends cask.MainRoutes {
     }
   }
 
+  def mojeMap[A,B,C](a: Option[A], b: Option[B])(f:(A,B)=>C):Option[C] = {
+    a.flatMap(newA => b.map(newB => f(newA, newB)))
+  }
+
+  @cask.postJson("/mojeMap")
+  def mojeMapEndpoint(a: Int, b: Int): cask.Response[ujson.Value] = {
+    val result = mojeMap(Some(a), Some(b))((x: Int, y: Int) => x + y)
+    result match {
+      case Some(newValue) =>
+        cask.Response(ujson.Num(newValue), statusCode = 200)
+      case None =>
+        cask.Response(ujson.Obj("error" -> "Incorrect input. Please provide two valid integers."), statusCode = 400)
+    }
+  }
+
   @cask.get("/")
   def hello(): String = {
     println(s"Server is running at: http://localhost:8080/")
