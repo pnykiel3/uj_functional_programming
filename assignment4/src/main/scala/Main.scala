@@ -79,6 +79,24 @@ object Main extends cask.MainRoutes {
     }
   }
 
+  def mean(list: List[Double]): Either[String, Double] = {
+    list.isEmpty match {
+      case true => Left("Please provide a non-empty list.")
+      case false => Right( list.sum / list.length)
+    }
+  }
+
+  @cask.postJson("/mean")
+  def meanEndpoint(list: List[Double]): cask.Response[ujson.Value] = {
+    val result = mean(list)
+    result match {
+      case Left(err) =>
+        cask.Response(ujson.Obj("error" -> "Please provide a non-empty list."), statusCode = 400)
+      case Right(newValue) =>
+        cask.Response(ujson.Num(newValue), statusCode = 200)
+    }
+  }
+
   @cask.get("/")
   def hello(): String = {
     println(s"Server is running at: http://localhost:8080/")
