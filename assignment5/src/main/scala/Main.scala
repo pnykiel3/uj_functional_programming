@@ -17,6 +17,17 @@ object Main extends cask.MainRoutes {
     cask.Response(output, statusCode = 200)
   }
 
+  def cube(list: List[Int]): Map[Int,Int] = {
+    list.distinct.map(n => (n, n*n*n)).toMap
+  }
+
+  @cask.postJson("/cube")
+  def cubeEndpoint(list: List[Int]): cask.Response[ujson.Value] = {
+    val result = cube(list)
+    val output = ujson.Obj.from(result.map { case (k, v) => (k.toString, ujson.Num(v)) })
+    cask.Response(output, statusCode = 200)
+  }
+
   @cask.get("/")
   def hello(): String = {
     println(s"Server is running at: http://localhost:8080/")
