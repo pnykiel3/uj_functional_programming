@@ -28,6 +28,24 @@ object Main extends cask.MainRoutes {
     cask.Response(output, statusCode = 200)
   }
 
+  import upickle.default._
+
+  case class StudyData(studentID: Int, hoursStudied: Int)
+    implicit val rw: ReadWriter[StudyData] = macroRW
+
+  def sumStudyHours(data: Map[Int, StudyData]): Map[Int, Int] = {
+    data.values.map(n => (n.studentID, n.hoursStudied)).groupBy(_._1).map {
+      case (student, hours) => (student, hours.map(_._2).sum)
+    }
+  }
+
+  @cask.postJson("/sumStudyHours")
+  def sumStudyHoursEndpoint(data: Map[Int, StudyData]): cask.Response[ujson.Value] = {
+    val result = sumStudyHours(data)
+    val output = ujson.Obj.from(result.map { case (k, v) => (k.toString, ujson.Num(v)) })
+    cask.Response(output, statusCode = 200)
+  }
+
   @cask.get("/")
   def hello(): String = {
     println(s"Server is running at: http://localhost:8080/")
