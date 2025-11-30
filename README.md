@@ -80,3 +80,18 @@ https://github.com/user-attachments/assets/07915ef7-e9b6-4c2b-a0b2-9de13a3a81d0
 
 Kod: [Link do zadania 4](https://hub.docker.com/r/pnykiel3/assignment4)
 </details>
+
+<details><summary><strong>Zestaw 5 - Map</strong></summary>
+
+✅ 3.0 Zaimplementuj endpoint, który zwróci słownik z liczbą powtarzających się liczb za pomocą funkcji mapreduce dla list z liczbami
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/201539a175e471876c8eec5c191a4c0aa2d099d3)
+
+
+✅ 3.5 Zaimplementuj endpoint, który zwróci słownik z liczbami podniesionymi do sześcianu za pomocą funkcji mapreduce dla list z liczbami
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/c451b7a460b5b05f551e25a2e24a9c72b06a54c4)
+
+✅ 3.5 Zaimplementuj endpoint, który zwróci słownik (student, godziny nauki), która wykorzysta funkcją mapreduce oraz groupBy dla słownika na wejściu
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/b27009187f18a0bdca3451c92b981b8cfbdc5676)
+
+Kod: [Link do zadania 5](https://hub.docker.com/r/pnykiel3/assignment5)
+</details>
