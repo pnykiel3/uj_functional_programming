@@ -26,6 +26,11 @@ setHead :: [Int] -> Int -> [Int]
 setHead list element = 
     element : list
 
+append :: [Int] -> Int -> Int -> [Int]
+append list index element =
+    let (first, second) = splitAt index list
+    in first ++ [element] ++ second
+    
 -- -----------------------------------------------------------------------------
 -- DATA TYPES & HELPERS
 -- -----------------------------------------------------------------------------
@@ -34,7 +39,8 @@ data AnyReq = AnyReq {
     list0   :: Maybe [Int],
     list1   :: Maybe [Int],
     list2   :: Maybe [Int],
-    element :: Maybe Int
+    element :: Maybe Int,
+    index   :: Maybe Int
 } deriving (Show, Generic)
 
 instance FromJSON AnyReq
@@ -44,6 +50,7 @@ getList0 req = fromMaybe [] (list0 req)
 getList1 req = fromMaybe [] (list1 req)
 getList2 req = fromMaybe [] (list2 req)
 getElem  req = fromMaybe 0  (element req)
+getIndex req = fromMaybe 0  (index req)
 
 -- -----------------------------------------------------------------------------
 -- SERVER
@@ -62,6 +69,9 @@ main = scotty 8080 $ do
 
     run "/sum_list" $ \req -> 
         sumList (getList0 req) (getList1 req) (getList2 req)
-
+        
     run "/set_head" $ \req -> 
         setHead (getList req) (getElem req)
+
+    run "/append" $ \req -> 
+        append (getList req) (getIndex req) (getElem req)
