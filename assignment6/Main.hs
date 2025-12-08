@@ -30,7 +30,11 @@ append :: [Int] -> Int -> Int -> [Int]
 append list index element =
     let (first, second) = splitAt index list
     in first ++ [element] ++ second
-    
+
+squareList :: [Int] -> [Int] -> [(Int, Int)]
+squareList list0 list1 =
+    [ (a*a, b*b) | (a, b) <- zip list0 list1]
+
 -- -----------------------------------------------------------------------------
 -- DATA TYPES & HELPERS
 -- -----------------------------------------------------------------------------
@@ -69,9 +73,12 @@ main = scotty 8080 $ do
 
     run "/sum_list" $ \req -> 
         sumList (getList0 req) (getList1 req) (getList2 req)
-        
+
     run "/set_head" $ \req -> 
         setHead (getList req) (getElem req)
 
     run "/append" $ \req -> 
         append (getList req) (getIndex req) (getElem req)
+
+    run "/square_list" $ \req -> 
+        squareList (getList0 req) (getList1 req)
