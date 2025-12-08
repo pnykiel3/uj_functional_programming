@@ -105,22 +105,27 @@ Kod: [Link do zadania 5](https://hub.docker.com/r/pnykiel3/assignment5)
     
 ✅ 3.0 Zaimplementuj funkcję isSorted, która sprawdza czy dana funkcja jest posortowana zgodnie z podaną funkcją porównawczą
 [Commit](https://github.com/pnykiel3/uj_functional_programming/commit/6f3e5fcf9dace9a73f5e4ae8a4143baee9c58ae0)
+
 https://github.com/user-attachments/assets/983118ad-d813-4c93-8086-9b4ade7fc5eb
 
 ✅ 3.5 Zaimplementuj funkcję, która zsumuje liczby po wierszach z trzech list na wejściu; wykorzystaj funkcję sprowadzi funkcję z trzema argumentami, do funkcji z dwoma
 [Commit](https://github.com/pnykiel3/uj_functional_programming/commit/1f4f5e9dff8fbf70e5bf934f5045179a54135ce9)
+
 https://github.com/user-attachments/assets/0a9f0f0d-28b0-4125-b115-639e8c1c72fa
     
 ✅ 4.0 Zaimplementuj funkcję setHead, która doda element na początku listy
 [Commit](https://github.com/pnykiel3/uj_functional_programming/commit/885f12820d51112430e1cecfd8f217052d88db5d)
+
 https://github.com/user-attachments/assets/fd951633-5ccc-481a-b606-899c89a48947
 
 ✅ 4.5 Zaimplementuj funkcję append, która doda element we wskazanym miejscu w liście
 [Commit](https://github.com/pnykiel3/uj_functional_programming/commit/88b35ef00dbf82a7edc6dde4019b8a6956623341)
+
 https://github.com/user-attachments/assets/e17c3718-a8ec-4e61-8569-4bc3bd54cfd8
     
 ✅ 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej
 [Commit](https://github.com/pnykiel3/uj_functional_programming/commit/25f24e04c0ddc7827c0a7c892cc70c80336ff4e1)
+
 https://github.com/user-attachments/assets/5685f4e7-d3ba-44f4-881b-6e5d94029a8c
 
 Kod: [Link do zadania 6](https://hub.docker.com/r/pnykiel3/assignment6)
