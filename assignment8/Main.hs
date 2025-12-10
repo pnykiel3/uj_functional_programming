@@ -11,7 +11,10 @@ import Data.Maybe (fromMaybe)
 data AnyReq = AnyReq {
     x    :: Maybe Int,
     y    :: Maybe Int,
-    op   :: Maybe Char
+    op   :: Maybe Char,
+    list0   :: Maybe [Int],
+    list1   :: Maybe [Int],
+    list2   :: Maybe [Int]
 } deriving (Show, Generic)
 
 instance FromJSON AnyReq
@@ -19,6 +22,9 @@ instance FromJSON AnyReq
 getX  req = fromMaybe 0 (x req)
 getY  req = fromMaybe 0 (y req)
 getOp req = fromMaybe '+' (op req)
+getList0 req = fromMaybe [] (list0 req)
+getList1 req = fromMaybe [] (list1 req)
+getList2 req = fromMaybe [] (list2 req)
 
 -- -----------------------------------------------------------------------------
 -- SERVER
@@ -36,3 +42,11 @@ main = scotty 8080 $ do
             if getOp req == '-'
                 then fmap (xVal -) (Just yVal)
                 else fmap (+ xVal) (Just yVal)
+
+    run "/concat" $ \req ->
+        let
+            l0 = getList0 req
+            l1 = getList1 req
+            l2 = getList2 req
+        in
+            l0 <> l1 <> l2
