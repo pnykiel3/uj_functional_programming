@@ -6,6 +6,12 @@ import Data.Aeson (FromJSON, ToJSON, object, (.=))
 import GHC.Generics (Generic)
 import Data.Maybe (fromMaybe)
 -- -----------------------------------------------------------------------------
+-- LOGIC
+-- -----------------------------------------------------------------------------
+sumList :: [Int] -> Int
+sumList [] = 0
+sumList (x:xs) = x + sumList xs
+-- -----------------------------------------------------------------------------
 -- DATA TYPES & HELPERS
 -- -----------------------------------------------------------------------------
 data AnyReq = AnyReq {
@@ -25,7 +31,6 @@ getOp req = fromMaybe '+' (op req)
 getList0 req = fromMaybe [] (list0 req)
 getList1 req = fromMaybe [] (list1 req)
 getList2 req = fromMaybe [] (list2 req)
-
 -- -----------------------------------------------------------------------------
 -- SERVER
 -- -----------------------------------------------------------------------------
@@ -50,3 +55,12 @@ main = scotty 8080 $ do
             l2 = getList2 req
         in
             l0 <> l1 <> l2
+    
+    run "/safe_sum" $ \req ->
+        let
+            l0 = getList0 req
+            x = getX req
+        in
+            do
+                if x < 1 then Nothing
+                else Just $ sumList l0
