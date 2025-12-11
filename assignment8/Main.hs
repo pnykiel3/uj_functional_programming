@@ -5,6 +5,7 @@ import Web.Scotty
 import Data.Aeson (FromJSON, ToJSON, object, (.=))
 import GHC.Generics (Generic)
 import Data.Maybe (fromMaybe)
+import Control.Monad (join)
 -- -----------------------------------------------------------------------------
 -- LOGIC
 -- -----------------------------------------------------------------------------
@@ -64,3 +65,11 @@ main = scotty 8080 $ do
             do
                 if x < 1 then Nothing
                 else Just $ sumList l0
+    
+    run "/set_head" $ \req ->
+        let
+            head = x req
+            list = list0 req
+            combine = \h -> fmap (h :) list
+        in
+            join (fmap combine head)
