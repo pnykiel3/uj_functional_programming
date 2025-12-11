@@ -130,3 +130,33 @@ https://github.com/user-attachments/assets/5685f4e7-d3ba-44f4-881b-6e5d94029a8c
 
 Kod: [Link do zadania 6](https://hub.docker.com/r/pnykiel3/assignment6)
 </details>
+
+<details><summary><strong>Zestaw 8 - Haskell - monoidy, monady, funktory</strong></summary>
+    
+✅ 3.0 Zaimplementuj funkcję isSorted, która sprawdza czy dana funkcja jest posortowana zgodnie z podaną funkcją porównawczą
+[Commit]()
+
+
+
+✅ 3.5 Zaimplementuj funkcję, która zsumuje liczby po wierszach z trzech list na wejściu; wykorzystaj funkcję sprowadzi funkcję z trzema argumentami, do funkcji z dwoma
+[Commit]()
+
+
+    
+✅ 4.0 Zaimplementuj funkcję setHead, która doda element na początku listy
+[Commit]()
+
+
+
+✅ 4.5 Zaimplementuj funkcję append, która doda element we wskazanym miejscu w liście
+[Commit]()
+
+
+    
+✅ 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej
+[Commit]()
+
+
+
+Kod: [Link do zadania 8](https://hub.docker.com/r/pnykiel3/assignment8)
+</details>
