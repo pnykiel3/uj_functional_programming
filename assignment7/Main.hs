@@ -66,3 +66,10 @@ main = scotty 8080 $ do
             seedList = [s..s+9]
         in
             map nextDouble seedList
+
+    run "/flatmap_double" $ \req ->
+        let
+            s = getSeed req
+            seedList = [s..s+2]
+        in
+            concatMap (\x -> [nextDouble x, nextDouble (nextInt x)]) seedList
