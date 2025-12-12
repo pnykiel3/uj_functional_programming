@@ -129,6 +129,38 @@ https://github.com/user-attachments/assets/e17c3718-a8ec-4e61-8569-4bc3bd54cfd8
 https://github.com/user-attachments/assets/5685f4e7-d3ba-44f4-881b-6e5d94029a8c
 
 Kod: [Link do zadania 6](https://hub.docker.com/r/pnykiel3/assignment6)
+
+</details>
+
+<details><summary><strong>Zestaw 7 - Haskell - maszyna stanów</strong></summary>
+    
+✅ 3.0 Zaimplementuj funkcję, która zwróci wartość między 0, a maxvalue of Int włącznie
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/0ce12c81274a44b8b14b2548d4c58b50f9a66570)
+
+https://github.com/user-attachments/assets/1b3954bb-6aff-4288-9e01-ca548fa91f89
+
+✅ 3.5 Zaimplementuj funkcję, która zwróci wartość między 0, a 1 (Double) z wyłączeniem 1
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/85211b34f75f2f85b09d5bcd9e253971ec94d8f0)
+
+https://github.com/user-attachments/assets/77061c34-8a11-4821-9a93-85320e4a2da4
+    
+✅ 4.0 Zaimplementuj funkcję, która zwróci pary (Int, Double), (Double, Int) oraz krotki (Double, Double, Double) wykorzystując funkcje z ocen 3.0 oraz 3.5
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/71600dd2ccd047e48299a4e7a6efa275f520a17e)
+
+https://github.com/user-attachments/assets/f8949b75-de1b-4cfe-bb36-4ecb819f2c3c
+
+✅ 4.5 Zaimplementuj funkcję, która zwróci wartość jak w funkcji 3.5, ale wykorzysta map
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/2e66a1fb018a4b08c7d18edefe3d0727a7b7785d)
+
+https://github.com/user-attachments/assets/ee1ec64e-a4ec-4541-9e8f-a066b3988096
+
+✅ 5.0 Zaimplementuj funkcję, która zwróci wartość jak w funkcji 3.5, ale wykorzysta flatMap
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/b15acecdd994ab399385c984a4549d25662728d9)
+
+https://github.com/user-attachments/assets/fb51708c-07f6-40f8-b609-99bba41c48a5
+
+Kod: [Link do zadania 7](https://hub.docker.com/r/pnykiel3/assignment7)
+
 </details>
 
 <details><summary><strong>Zestaw 8 - Haskell - monoidy, monady, funktory</strong></summary>
@@ -155,4 +187,5 @@ https://github.com/user-attachments/assets/d0122554-1b7c-43cc-b23a-0b486aab5b2c
 https://github.com/user-attachments/assets/25856d14-fa6a-422b-aaa0-ec461fd79fad
 
 Kod: [Link do zadania 8](https://hub.docker.com/r/pnykiel3/assignment8)
+
 </details>
