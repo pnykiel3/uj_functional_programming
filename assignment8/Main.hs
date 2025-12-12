@@ -63,3 +63,11 @@ main = scotty 8080 $ do
             if null l0
                 then Nothing
                 else return $ sumList l0
+
+    run "/set_head" $ \req ->
+        let
+            head = x req
+            list = list0 req
+            combine = \h -> fmap (h :) list
+        in
+            join $ fmap combine head
