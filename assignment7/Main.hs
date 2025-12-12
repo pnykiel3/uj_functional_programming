@@ -18,6 +18,14 @@ nextInt seed =
     result = if newSeed < 0 then -(newSeed +1) else newSeed
     in
     result
+
+nextDouble :: Int -> Double
+nextDouble seed =
+    let
+        randomInt = fromIntegral (nextInt seed) :: Double
+        maxInt = fromIntegral (maxBound :: Int) :: Double
+        result = randomInt / (maxInt + 1.0)
+    in result
 -- -----------------------------------------------------------------------------
 -- DATA TYPES & HELPERS
 -- -----------------------------------------------------------------------------
@@ -38,3 +46,6 @@ main = scotty 8080 $ do
 
     run "/next_int" $ \req -> 
         nextInt (getSeed req)
+
+    run "/next_double" $ \req ->
+        nextDouble (getSeed req)
