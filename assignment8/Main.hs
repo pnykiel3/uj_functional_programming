@@ -56,20 +56,3 @@ main = scotty 8080 $ do
             l2 = getList2 req
         in
             l0 <> l1 <> l2
-    
-    run "/safe_sum" $ \req ->
-        let
-            l0 = getList0 req
-            x = getX req
-        in
-            do
-                if x < 1 then Nothing
-                else Just $ sumList l0
-    
-    run "/set_head" $ \req ->
-        let
-            head = x req
-            list = list0 req
-            combine = \h -> fmap (h :) list
-        in
-            join (fmap combine head)
