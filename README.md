@@ -133,30 +133,26 @@ Kod: [Link do zadania 6](https://hub.docker.com/r/pnykiel3/assignment6)
 
 <details><summary><strong>Zestaw 8 - Haskell - monoidy, monady, funktory</strong></summary>
     
-✅ 3.0 Zaimplementuj funkcję isSorted, która sprawdza czy dana funkcja jest posortowana zgodnie z podaną funkcją porównawczą
-[Commit]()
+✅ 3.0 Zaimplementuj funkcję, która wykorzysta metodę map fuktora do wykonania funkcji dodawania lub
+odejmowania na dwóch wartość przyjętych na wejściu
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/79b23742b41c1e329977a95eb67c58485326ed3c)
 
+https://github.com/user-attachments/assets/2d71349b-1b6a-4e22-adb3-e6781089460d
 
+✅ 3.5 Zaimplementuj funkcję, która zwróci wartość konkatenacji trzech list za pomocą monoidów
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/c70604487fc7b40a668d5eacba8fa0d9e64cd7c8)
 
-✅ 3.5 Zaimplementuj funkcję, która zsumuje liczby po wierszach z trzech list na wejściu; wykorzystaj funkcję sprowadzi funkcję z trzema argumentami, do funkcji z dwoma
-[Commit]()
-
-
+https://github.com/user-attachments/assets/366aaefc-aae5-4d31-8f78-fb4217f98a82
     
-✅ 4.0 Zaimplementuj funkcję setHead, która doda element na początku listy
-[Commit]()
+✅ 4.0 Zaimplementuj funkcję, która zwróci wartość sumy listy liczb lub zwróci nil; zaimplementuj wykorzystując monady
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/282b65e0b71ed59b468b781ea4a666fe1e2ab141)
 
+https://github.com/user-attachments/assets/d0122554-1b7c-43cc-b23a-0b486aab5b2c
 
+✅ 4.5 Zaimplementuj funkcję, która zwróci zadanie z zestawu 6 na ocenę 4.0 i wykorzysta metodę combine oraz join
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/282b65e0b71ed59b468b781ea4a666fe1e2ab141)
 
-✅ 4.5 Zaimplementuj funkcję append, która doda element we wskazanym miejscu w liście
-[Commit]()
-
-
-    
-✅ 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej
-[Commit]()
-
-
+https://github.com/user-attachments/assets/25856d14-fa6a-422b-aaa0-ec461fd79fad
 
 Kod: [Link do zadania 8](https://hub.docker.com/r/pnykiel3/assignment8)
 </details>
