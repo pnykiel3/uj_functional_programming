@@ -59,3 +59,10 @@ main = scotty 8080 $ do
             valueDouble3 = nextDouble $ nextInt valueInt
         in
             ((valueInt, valueDouble1), (valueDouble1, valueInt), (valueDouble1, valueDouble2, valueDouble3))
+
+    run "/map_double" $ \req ->
+        let
+            s = getSeed req
+            seedList = [s..s+9]
+        in
+            map nextDouble seedList
