@@ -56,3 +56,10 @@ main = scotty 8080 $ do
             l2 = getList2 req
         in
             l0 <> l1 <> l2
+    
+    run "/safe_sum" $ \req ->
+        do
+            l0 <- list0 req
+            if null l0
+                then Nothing
+                else return $ sumList l0
