@@ -49,3 +49,13 @@ main = scotty 8080 $ do
 
     run "/next_double" $ \req ->
         nextDouble (getSeed req)
+
+    run "/three" $ \req ->
+        let
+            s = getSeed req
+            valueInt = nextInt s
+            valueDouble1 = nextDouble s
+            valueDouble2 = nextDouble valueInt
+            valueDouble3 = nextDouble $ nextInt valueInt
+        in
+            ((valueInt, valueDouble1), (valueDouble1, valueInt), (valueDouble1, valueDouble2, valueDouble3))
