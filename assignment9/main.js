@@ -36,6 +36,15 @@ app.post('/mySort', async (req, res) => {
     }
 });
 
+app.post('/studyCounter', async (req, res) => {
+    try {
+        const result = await wakeWorkerUp('studyCounter', req.body.data);
+        res.json({ succes: true, result: result });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 app.listen(3000, () => {
     console.log(`Server runs on port 3000`);
 });

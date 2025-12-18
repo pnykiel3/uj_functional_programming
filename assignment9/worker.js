@@ -16,6 +16,26 @@ function mySort(arr) {
     return arr.sort((a, b) => a - b);
 }
 
+function studyCounter(studyData) {
+    if (!Array.isArray(studyData)) throw new Error("Input is not an array");
+    const group = studyData.reduce((dict, data) => {
+        const student = data.student;
+        const study_hour = data.study;
+
+        if (!dict[student]) dict[student] = [];
+        dict[student].push(study_hour);
+        return dict;
+    }, {})
+
+    const result = {};
+    for (const student in group) {
+        const dictionary = group[student];
+        const sum_hours = dictionary.reduce((a, b) => a + b, 0);
+        result[student] = sum_hours;
+    }
+    return result;
+}
+
 try {
     let result;
 
@@ -25,6 +45,9 @@ try {
             break;
         case 'sort':
             result = mySort(data);
+            break;
+        case 'studyCounter':
+            result = studyCounter(data);
             break;
         default:
             throw new Error("Unknown task");
