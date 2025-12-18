@@ -11,12 +11,20 @@ function isPrime(num) {
     return true;
 }
 
+function mySort(arr) {
+    if (!Array.isArray(arr)) throw new Error("Input is not an array");
+    return arr.sort((a, b) => a - b);
+}
+
 try {
     let result;
 
     switch (task) {
         case 'isPrime':
             result = isPrime(data);
+            break;
+        case 'sort':
+            result = mySort(data);
             break;
         default:
             throw new Error("Unknown task");

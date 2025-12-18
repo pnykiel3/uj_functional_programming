@@ -27,6 +27,15 @@ app.get('/check-prime/:number', async (req, res) => {
     }
 });
 
+app.post('/mySort', async (req, res) => {
+    try {
+        const result = await wakeWorkerUp('sort', req.body.list);
+        res.json({ succes: true, result: result });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 app.listen(3000, () => {
     console.log(`Server runs on port 3000`);
 });
