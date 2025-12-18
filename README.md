@@ -165,8 +165,7 @@ Kod: [Link do zadania 7](https://hub.docker.com/r/pnykiel3/assignment7)
 
 <details><summary><strong>Zestaw 8 - Haskell - monoidy, monady, funktory</strong></summary>
     
-✅ 3.0 Zaimplementuj funkcję, która wykorzysta metodę map fuktora do wykonania funkcji dodawania lub
-odejmowania na dwóch wartość przyjętych na wejściu
+✅ 3.0 Zaimplementuj funkcję, która wykorzysta metodę map fuktora do wykonania funkcji dodawania lub odejmowania na dwóch wartość przyjętych na wejściu
 [Commit](https://github.com/pnykiel3/uj_functional_programming/commit/79b23742b41c1e329977a95eb67c58485326ed3c)
 
 https://github.com/user-attachments/assets/2d71349b-1b6a-4e22-adb3-e6781089460d
@@ -187,5 +186,26 @@ https://github.com/user-attachments/assets/d0122554-1b7c-43cc-b23a-0b486aab5b2c
 https://github.com/user-attachments/assets/25856d14-fa6a-422b-aaa0-ec461fd79fad
 
 Kod: [Link do zadania 8](https://hub.docker.com/r/pnykiel3/assignment8)
+
+</details>
+
+<details><summary><strong>Zestaw 9 - JavaScript</strong></summary>
+    
+✅ 3.0 Zaimplementuj funkcję, która wzwróci wartość binarną czy podana na wejściu liczba jest liczbą pierwszą; wykorzysta Promise
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/b7e0497d4e5c11eeac9e45372e16fb844d9bc8f0)
+
+https://github.com/user-attachments/assets/8054879b-8508-4822-b496-cafcc7f69720
+
+✅ 3.5 Zaimplementuj funkcję, która zwróci posortowaną listę; wykorzysta Promise
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/14b033c16f07e3a82ffafd516c67459dfe2138a1)
+
+https://github.com/user-attachments/assets/53fa5a89-6406-4fa6-9807-95a8a44af941
+    
+✅ 4.0 Zaimplementuj funkcję, która zwróci wynik funkcji z zad. 5 na 4.0 (mapreduce); wykorzysta worker_threads
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/5ffb722073121e1bcfbdd9e3bf815da825cb4a01)
+
+https://github.com/user-attachments/assets/1169a275-2dcb-491b-b016-74c71a6d83cd
+
+Kod: [Link do zadania 9](https://hub.docker.com/r/pnykiel3/assignment9)
 
 </details>
