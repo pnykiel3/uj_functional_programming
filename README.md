@@ -46,8 +46,8 @@ https://github.com/user-attachments/assets/041822b6-0839-4025-ac30-51e243b4297a
 
 https://github.com/user-attachments/assets/dbd38adf-60f8-4d0e-8aea-a4e607ee88d2
 
-Plik Main.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/Main.scala)
-Plik DoubleLinkedList.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/DoubleLinkedList.scala)
+Plik Main.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/Main.scala) <br>
+Plik DoubleLinkedList.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/DoubleLinkedList.scala) <br>
 Kod: [Link do zadania 3](https://hub.docker.com/r/pnykiel3/assignment3)
 </details>
 
