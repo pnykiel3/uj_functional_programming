@@ -207,5 +207,23 @@ https://github.com/user-attachments/assets/53fa5a89-6406-4fa6-9807-95a8a44af941
 https://github.com/user-attachments/assets/1169a275-2dcb-491b-b016-74c71a6d83cd
 
 Kod: [Link do zadania 9](https://hub.docker.com/r/pnykiel3/assignment9)
+</details>
+<details><summary><strong>Zestaw 10 - Microsoft Azure</strong></summary>
+    
+Przygotuj 3 wybrane funkcje w JS oraz udostępnij w ramach usługi Azure Functions
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/7cf265a8be82c7c0178313ef473c85f8f9180b94)
+
+Adres bazowy API: <br>
+`https://aaaa1-gpb2hjcpbcacf3cz.spaincentral-01.azurewebsites.net/api/`
+
+https://github.com/user-attachments/assets/003dd545-da52-4a5b-863a-9d83058d8875
+
+Przygotuj 3 wybrane funkcje w Haskellu w ramach Azure App Services. Wykorzystaj obraz dockerowy.
+[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/0bf9eeebe732d086ce43f3c931bb7369d1c2d909)
+
+Adres serwera: <br>
+`https://pnykiel3-haskell-anc6ewb2faehftej.spaincentral-01.azurewebsites.net`
+
+https://github.com/user-attachments/assets/94f69868-c78d-4c2f-b178-5e030bdfa919
 
 </details>
