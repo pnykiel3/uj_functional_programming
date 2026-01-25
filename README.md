@@ -1,229 +1,263 @@
-# Programowanie funkcyjne
+# Functional Programming Portfolio
 
-<details><summary><strong>Zestaw 1 - Scala, Docker, Cask</strong></summary>
-    
-✅ 3.0 Zaimplementuj funkcję isSorted, która sprawdza czy dana funkcja jest posortowana zgodnie z podaną funkcją porównawczą
-    
-✅ 3.5 Zaimplementuj funkcję, która zsumuje liczby po wierszach z trzech list na wejściu; wykorzystaj funkcję sprowadzi funkcję z trzema argumentami, do funkcji z dwoma
-    
-✅ 4.0 Zaimplementuj funkcję setHead, która doda element na początku listy
-    
-✅ 4.5 Zaimplementuj funkcję append, która doda element we wskazanym miejscu w liście
-    
-✅ 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej
-    
-Plik Main.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment1/src/main/scala/Main.scala)
-    
-Kod: [Link do zadania 1](https://hub.docker.com/r/pnykiel3/cask-asgn1)
-    
-https://github.com/user-attachments/assets/d5c64052-4e22-4151-ba8e-2190b5357a74
-</details>
+A collection of functional programming projects in **Scala**, **Haskell**, and **JavaScript** — from core concepts like immutability and higher-order functions to advanced topics like monads and cloud deployments.
 
-<details><summary><strong>Zestaw 2 - Docker</strong></summary>
+---
 
-✅   Stwórz obraz dockerowy, który bazuje na najnowszej wersji Ubuntu LTS oraz który zawiera paczki:
-- Java 8
-- Python 3
-- Scala (dowolna wersja)
-- sbt
-- vim  
+## Skills at a Glance
 
-[Link do commit](https://github.com/pnykiel3/uj_functional_programming/commit/e02d12608662d73ad3e80f0503e572f76baab362)  
-Kod: [Link do zadania 2](https://hub.docker.com/r/pnykiel3/assignment2)
-</details>
+| Category | What I've Worked With |
+|----------|----------------------|
+| **Languages** | Scala, Haskell, JavaScript |
+| **FP Concepts** | Pure Functions, Immutability, Higher-Order Functions, Currying, Pattern Matching |
+| **Type Systems** | Option/Maybe, Either, Monads, Monoids, Functors |
+| **Concurrency** | Promises, Worker Threads, State Machines |
+| **DevOps** | Docker, Azure Functions, Azure App Services |
+| **Web APIs** | REST endpoints with Cask (Scala) |
 
-<details><summary><strong>Zestaw 3  - Scala, Docker, Cask</strong></summary>
+---
 
-✅ 3.0 Zaimplementuj endpoint, który zwróci wynik funkcji tail, która usuwa pierwszy element z listy
+## Projects
 
-https://github.com/user-attachments/assets/0d2daa1a-5487-4397-b676-a7f119b42731
+### Scala — Functional Fundamentals & REST APIs
 
-✅ 3.5 Zaimplementuj endpoint, zwróci wynik funkcji drop, która usuwa n elementów z listy dwukierunkowej
+Scala blends object-oriented and functional paradigms, which makes it great for building type-safe, concurrent applications. I used the **Cask** framework (a lightweight HTTP micro-framework similar to Flask) to expose these implementations as REST APIs.
 
-https://github.com/user-attachments/assets/041822b6-0839-4025-ac30-51e243b4297a
+<details><summary><strong>List Operations & Higher-Order Functions</strong></summary>
 
-✅ 4.0 Zaimplementuj endpoint, zwróci wynik funkcji dropWhile, która usuwa n elementów z listy dwukierunkowej, które spełniają warunek funkcji (parametr); należy wykorzystać podejście pattern match
+The bread and butter of functional programming — functions that take other functions as arguments, enabling flexible and reusable code.
 
-https://github.com/user-attachments/assets/dbd38adf-60f8-4d0e-8aea-a4e607ee88d2
+**What I implemented:**
+- `isSorted` — checks if a list is sorted using a custom comparator function
+- `setHead` / `append` — immutable list operations that return new lists instead of modifying existing ones
+- `tail` / `drop` / `dropWhile` — list transformations using pattern matching and predicate functions
+- Function currying — converting a 3-argument function into chainable single-argument functions
+- Row-wise operations with `map` and anonymous functions
 
-Plik Main.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/Main.scala) <br>
-Plik DoubleLinkedList.scala [Link](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/DoubleLinkedList.scala) <br>
-Kod: [Link do zadania 3](https://hub.docker.com/r/pnykiel3/assignment3)
-</details>
+I also built a custom **doubly linked list** with functional operations, showing how traditionally mutable structures can be handled immutably.
 
-<details><summary><strong>Zestaw 4  - Either, Option, Docker, Cask</strong></summary>
+**Source Code:**  
+[Main.scala (Set 1)](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment1/src/main/scala/Main.scala) |
+[Main.scala (Set 3)](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/Main.scala) |
+[DoubleLinkedList.scala](https://github.com/pnykiel3/uj_functional_programming/blob/main/assignment3/src/main/scala/DoubleLinkedList.scala)
 
-✅ 3.0 Zaimplementuj endpoint, który zwróci taki sam wynik jak zad.1 4.5 (append) ale wykorzysta typ opcjonalny  <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/28fd9a19f9fc033350f5ac4be6c8a08c60c801c8)
-
-https://github.com/user-attachments/assets/c3afb0b3-d4e5-448d-9243-68c589fe212c
-
-✅ 3.5 Zaimplementuj endpoint, który zwróci wariancję z listy; do implementacji wykorzystać należy typ opcjonalny  <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/c8ae0a7d83abab5d4ae75024fb8a92773dde2c21)
-
-https://github.com/user-attachments/assets/ae837f62-f012-4fbd-b2ed-f6542f8ebbb7
-
-✅ 4.0 Zaimplementuj endpoint, który zwróci listę (option), która jest wynikiem połączenia dwóch list (option); w przypadku gdy jedna z list jest None, funkcja powinna zwrócić None  <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/dc10acbeec684aa4d248db5f27b721ca24b2814e)
-
-https://github.com/user-attachments/assets/16805a30-6df8-425f-b2f7-c0812e2d9007
-
-✅ 4.5 Zaimplementuj endpoint, który zwróci listę za pomocą metody mojeMap[A,B,C](a: Option[A], b:] Option[B])(f:(A,B)=>C):Option[C]; należy wykorzystać metodę flatMap oraz map  <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/668f07a7bc427a878649c8949a6fc296892c18ec)
-
-https://github.com/user-attachments/assets/f8ec930c-0ae9-4e11-9970-621ef7cd4a37
-
-✅ 5.0 Zaimplementuj endpoint, który zwróci taki średnią (mean) z listy zwracając Either  <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/b250ef2c351daaaaeb49150f32472f5266c8d84f)
-
-https://github.com/user-attachments/assets/07915ef7-e9b6-4c2b-a0b2-9de13a3a81d0
-
-Kod: [Link do zadania 4](https://hub.docker.com/r/pnykiel3/assignment4)
-</details>
-
-<details><summary><strong>Zestaw 5 - Map</strong></summary>
-
-✅ 3.0 Zaimplementuj endpoint, który zwróci słownik z liczbą powtarzających się liczb za pomocą funkcji mapreduce dla list z liczbami  <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/201539a175e471876c8eec5c191a4c0aa2d099d3)
-
-https://github.com/user-attachments/assets/9e6be348-c437-4581-8b2c-6da0ccb90692
-
-✅ 3.5 Zaimplementuj endpoint, który zwróci słownik z liczbami podniesionymi do sześcianu za pomocą funkcji mapreduce dla list z liczbami  <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/c451b7a460b5b05f551e25a2e24a9c72b06a54c4)
-
-https://github.com/user-attachments/assets/32fd0564-1e79-4fb5-af79-9c63aaa4f09d
-
-✅ 4.0 Zaimplementuj endpoint, który zwróci słownik (student, godziny nauki), która wykorzysta funkcją mapreduce oraz groupBy dla słownika na wejściu  <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/b27009187f18a0bdca3451c92b981b8cfbdc5676)
-
-https://github.com/user-attachments/assets/a317101f-adea-4643-b89a-fd3f8b63e80f
-
-Kod: [Link do zadania 5](https://hub.docker.com/r/pnykiel3/assignment5)
-</details>
-
-<details><summary><strong>Zestaw 6 - Haskell</strong></summary>
-    
-✅ 3.0 Zaimplementuj funkcję isSorted, która sprawdza czy dana funkcja jest posortowana zgodnie z podaną funkcją porównawczą <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/6f3e5fcf9dace9a73f5e4ae8a4143baee9c58ae0)
-
-https://github.com/user-attachments/assets/983118ad-d813-4c93-8086-9b4ade7fc5eb
-
-✅ 3.5 Zaimplementuj funkcję, która zsumuje liczby po wierszach z trzech list na wejściu; wykorzystaj funkcję sprowadzi funkcję z trzema argumentami, do funkcji z dwoma <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/1f4f5e9dff8fbf70e5bf934f5045179a54135ce9)
-
-https://github.com/user-attachments/assets/0a9f0f0d-28b0-4125-b115-639e8c1c72fa
-    
-✅ 4.0 Zaimplementuj funkcję setHead, która doda element na początku listy <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/885f12820d51112430e1cecfd8f217052d88db5d)
-
-https://github.com/user-attachments/assets/fd951633-5ccc-481a-b606-899c89a48947
-
-✅ 4.5 Zaimplementuj funkcję append, która doda element we wskazanym miejscu w liście <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/88b35ef00dbf82a7edc6dde4019b8a6956623341)
-
-https://github.com/user-attachments/assets/e17c3718-a8ec-4e61-8569-4bc3bd54cfd8
-    
-✅ 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/25f24e04c0ddc7827c0a7c892cc70c80336ff4e1)
-
-https://github.com/user-attachments/assets/5685f4e7-d3ba-44f4-881b-6e5d94029a8c
-
-Kod: [Link do zadania 6](https://hub.docker.com/r/pnykiel3/assignment6)
+**Docker:** [Set 1](https://hub.docker.com/r/pnykiel3/cask-asgn1) | [Set 3](https://hub.docker.com/r/pnykiel3/assignment3)
 
 </details>
 
-<details><summary><strong>Zestaw 7 - Haskell - maszyna stanów</strong></summary>
-    
-✅ 3.0 Zaimplementuj funkcję, która zwróci wartość między 0, a maxvalue of Int włącznie <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/0ce12c81274a44b8b14b2548d4c58b50f9a66570)
+<details><summary><strong>Type-Safe Error Handling (Option & Either)</strong></summary>
 
-https://github.com/user-attachments/assets/1b3954bb-6aff-4288-9e01-ca548fa91f89
+Instead of null checks and exceptions, functional programming uses types like `Option` and `Either` to make failures explicit — the compiler won't let you forget to handle edge cases.
 
-✅ 3.5 Zaimplementuj funkcję, która zwróci wartość między 0, a 1 (Double) z wyłączeniem 1 <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/85211b34f75f2f85b09d5bcd9e253971ec94d8f0)
+**What I implemented:**
+- Safe list operations returning `Option[T]` — values are either `Some(result)` or `None`, never null
+- Statistical calculations (variance, mean) that chain operations with `flatMap` and `map`
+- List merging with `Option` — returns `None` if either input is missing
+- Custom `myMap[A,B,C]` function demonstrating monadic composition
+- Mean calculation with `Either` — returns `Left("error message")` or `Right(result)`
 
-https://github.com/user-attachments/assets/77061c34-8a11-4821-9a93-85320e4a2da4
-    
-✅ 4.0 Zaimplementuj funkcję, która zwróci pary (Int, Double), (Double, Int) oraz krotki (Double, Double, Double) wykorzystując funkcje z ocen 3.0 oraz 3.5 <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/71600dd2ccd047e48299a4e7a6efa275f520a17e)
+**Source Code:** [View Code](https://github.com/pnykiel3/uj_functional_programming/tree/main/assignment4)
 
-https://github.com/user-attachments/assets/f8949b75-de1b-4cfe-bb36-4ecb819f2c3c
-
-✅ 4.5 Zaimplementuj funkcję, która zwróci wartość jak w funkcji 3.5, ale wykorzysta map <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/2e66a1fb018a4b08c7d18edefe3d0727a7b7785d)
-
-https://github.com/user-attachments/assets/ee1ec64e-a4ec-4541-9e8f-a066b3988096
-
-✅ 5.0 Zaimplementuj funkcję, która zwróci wartość jak w funkcji 3.5, ale wykorzysta flatMap <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/b15acecdd994ab399385c984a4549d25662728d9)
-
-https://github.com/user-attachments/assets/fb51708c-07f6-40f8-b609-99bba41c48a5
-
-Kod: [Link do zadania 7](https://hub.docker.com/r/pnykiel3/assignment7)
+**Docker:** [Option/Either Examples](https://hub.docker.com/r/pnykiel3/assignment4)
 
 </details>
 
-<details><summary><strong>Zestaw 8 - Haskell - monoidy, monady, funktory</strong></summary>
-    
-✅ 3.0 Zaimplementuj funkcję, która wykorzysta metodę map fuktora do wykonania funkcji dodawania lub odejmowania na dwóch wartość przyjętych na wejściu <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/79b23742b41c1e329977a95eb67c58485326ed3c)
+<details><summary><strong>MapReduce for Data Aggregation</strong></summary>
 
-https://github.com/user-attachments/assets/2d71349b-1b6a-4e22-adb3-e6781089460d
+MapReduce is a two-phase pattern: transform elements independently (Map), then combine results (Reduce). It's the foundation of frameworks like Spark and Hadoop.
 
-✅ 3.5 Zaimplementuj funkcję, która zwróci wartość konkatenacji trzech list za pomocą monoidów <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/c70604487fc7b40a668d5eacba8fa0d9e64cd7c8)
+**What I implemented:**
+- Frequency counter — counts how many times each number appears in a list
+- Number cubing with MapReduce
+- Student study hours aggregation using `mapreduce` + `groupBy`
 
-https://github.com/user-attachments/assets/366aaefc-aae5-4d31-8f78-fb4217f98a82
-    
-✅ 4.0 Zaimplementuj funkcję, która zwróci wartość sumy listy liczb lub zwróci nil; zaimplementuj wykorzystując monady <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/282b65e0b71ed59b468b781ea4a666fe1e2ab141)
+**Source Code:** [View Code](https://github.com/pnykiel3/uj_functional_programming/tree/main/assignment5)
 
-https://github.com/user-attachments/assets/d0122554-1b7c-43cc-b23a-0b486aab5b2c
-
-✅ 4.5 Zaimplementuj funkcję, która zwróci zadanie z zestawu 6 na ocenę 4.0 i wykorzysta metodę combine oraz join <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/282b65e0b71ed59b468b781ea4a666fe1e2ab141)
-
-https://github.com/user-attachments/assets/25856d14-fa6a-422b-aaa0-ec461fd79fad
-
-Kod: [Link do zadania 8](https://hub.docker.com/r/pnykiel3/assignment8)
+**Docker:** [MapReduce Examples](https://hub.docker.com/r/pnykiel3/assignment5)
 
 </details>
 
-<details><summary><strong>Zestaw 9 - JavaScript</strong></summary>
-    
-✅ 3.0 Zaimplementuj funkcję, która wzwróci wartość binarną czy podana na wejściu liczba jest liczbą pierwszą; wykorzysta Promise <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/b7e0497d4e5c11eeac9e45372e16fb844d9bc8f0)
+---
 
-https://github.com/user-attachments/assets/8054879b-8508-4822-b496-cafcc7f69720
+### Haskell — Pure Functional Programming
 
-✅ 3.5 Zaimplementuj funkcję, która zwróci posortowaną listę; wykorzysta Promise <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/14b033c16f07e3a82ffafd516c67459dfe2138a1)
+Haskell enforces purity — functions can't have side effects, and all data is immutable. This means highly predictable code where the type system catches bugs at compile time.
 
-https://github.com/user-attachments/assets/53fa5a89-6406-4fa6-9807-95a8a44af941
-    
-✅ 4.0 Zaimplementuj funkcję, która zwróci wynik funkcji z zad. 5 na 4.0 (mapreduce); wykorzysta worker_threads <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/5ffb722073121e1bcfbdd9e3bf815da825cb4a01)
+<details><summary><strong>Core Functions & Pattern Matching</strong></summary>
 
-https://github.com/user-attachments/assets/1169a275-2dcb-491b-b016-74c71a6d83cd
+**What I implemented:**
+- `isSorted` — recursive function with pattern matching on list structure
+- `setHead` / `append` — pure list operations using Haskell's cons operator (`:`)
+- Currying — in Haskell, all functions are automatically curried, so a 3-parameter function can be partially applied at any point
 
-Kod: [Link do zadania 9](https://hub.docker.com/r/pnykiel3/assignment9)
+**Source Code:** [View Code](https://github.com/pnykiel3/uj_functional_programming/tree/main/assignment6)
+
+**Docker:** [Haskell Basics](https://hub.docker.com/r/pnykiel3/assignment6)
+
 </details>
-<details><summary><strong>Zestaw 10 - Microsoft Azure</strong></summary>
-    
-Przygotuj 3 wybrane funkcje w JS oraz udostępnij w ramach usługi Azure Functions <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/7cf265a8be82c7c0178313ef473c85f8f9180b94)
 
-Adres bazowy API: <br>
-`https://aaaa1-gpb2hjcpbcacf3cz.spaincentral-01.azurewebsites.net/api/`
+<details><summary><strong>State Machines & Random Number Generation</strong></summary>
 
-https://github.com/user-attachments/assets/003dd545-da52-4a5b-863a-9d83058d8875
+In pure FP, functions can't maintain internal state. The solution is **state threading** — passing state explicitly through function parameters and return values.
 
-Przygotuj 3 wybrane funkcje w Haskellu w ramach Azure App Services. Wykorzystaj obraz dockerowy. <br>
-[Commit](https://github.com/pnykiel3/uj_functional_programming/commit/0bf9eeebe732d086ce43f3c931bb7369d1c2d909)
+**What I implemented:**
+- Pure RNG returning integers [0, maxInt] — the function returns both the number and a new seed
+- Double generator [0, 1) with function composition
+- Tuple generators combining multiple stateful computations
+- State transformations using `map` and `flatMap`
 
-Adres serwera: <br>
-`https://pnykiel3-haskell-anc6ewb2faehftej.spaincentral-01.azurewebsites.net`
+**Source Code:** [View Code](https://github.com/pnykiel3/uj_functional_programming/tree/main/assignment7)
 
-https://github.com/user-attachments/assets/94f69868-c78d-4c2f-b178-5e030bdfa919
+**Docker:** [State Machine RNG](https://hub.docker.com/r/pnykiel3/assignment7)
+
+</details>
+
+<details><summary><strong>Monoids, Monads & Functors</strong></summary>
+
+These are abstract patterns (type classes) that capture common behaviors across different types:
+
+- **Functor** — anything you can "map over" (like lists, Maybe, etc.)
+- **Monoid** — anything with an associative operation and identity (strings with concat, numbers with addition)
+- **Monad** — for sequencing computations that produce wrapped values
+
+**What I implemented:**
+- Arithmetic operations using Functor's `fmap`
+- List concatenation with Monoid's `mappend`
+- Safe summation using Monad's bind (`>>=`)
+- `combine` and `join` for monadic composition
+
+**Source Code:** [View Code](https://github.com/pnykiel3/uj_functional_programming/tree/main/assignment8)
+
+**Docker:** [Algebraic Abstractions](https://hub.docker.com/r/pnykiel3/assignment8)
+
+</details>
+
+---
+
+### JavaScript — Async FP & Concurrency
+
+JavaScript is single-threaded and event-driven, so async programming is essential. **Promises** bring functional composition to async code, and **Worker Threads** enable true parallelism.
+
+<details><summary><strong>Promises & Worker Threads</strong></summary>
+
+**What I implemented:**
+- Async prime checker using Promises
+- Async list sorting with Promises
+- **Parallel MapReduce with Worker Threads** — distributes computation across threads, uses `postMessage` for inter-thread communication, and coordinates results with Promises
+
+**Source Code:** [View Code](https://github.com/pnykiel3/uj_functional_programming/tree/main/assignment9)
+
+**Docker:** [Async JS Examples](https://hub.docker.com/r/pnykiel3/assignment9)
+
+</details>
+
+---
+
+### Cloud Deployments — Microsoft Azure
+
+Taking functional code from local Docker containers to production cloud infrastructure.
+
+<details><summary><strong>Azure Functions (Serverless JavaScript)</strong></summary>
+
+Azure Functions runs code on-demand without managing servers — you only pay for execution time. Perfect for stateless, event-triggered functions.
+
+3 JavaScript functions deployed as serverless endpoints.
+
+**API Endpoint:** `https://aaaa1-gpb2hjcpbcacf3cz.spaincentral-01.azurewebsites.net/api/`
+
+**Source Code:** [View Commit](https://github.com/pnykiel3/uj_functional_programming/commit/7cf265a8be82c7c0178313ef473c85f8f9180b94)
+
+</details>
+
+<details><summary><strong>Azure App Services (Containerized Haskell)</strong></summary>
+
+Haskell apps packaged in Docker and deployed to Azure's managed platform with automatic scaling and SSL.
+
+3 Haskell functions containerized and deployed.
+
+**Server:** `https://pnykiel3-haskell-anc6ewb2faehftej.spaincentral-01.azurewebsites.net`
+
+**Source Code:** [View Commit](https://github.com/pnykiel3/uj_functional_programming/commit/0bf9eeebe732d086ce43f3c931bb7369d1c2d909)
+
+</details>
+
+---
+
+### Docker Infrastructure
+
+Custom development environment based on Ubuntu LTS with Java 8, Scala + sbt, Python 3, and vim.
+
+**Docker:** [Development Environment](https://hub.docker.com/r/pnykiel3/assignment2)
+
+---
+
+## Repository Structure
+
+```
+uj_functional_programming/
+├── assignment1/    # Scala - List operations, currying
+├── assignment2/    # Docker environment
+├── assignment3/    # Scala - Doubly linked list, pattern matching
+├── assignment4/    # Scala - Option/Either error handling
+├── assignment5/    # Scala - MapReduce patterns
+├── assignment6/    # Haskell - Core FP, recursion
+├── assignment7/    # Haskell - State machines, RNG
+├── assignment8/    # Haskell - Monoids, Monads, Functors
+├── assignment9/    # JavaScript - Promises, Workers
+└── assignment10/   # Azure cloud deployments
+```
+
+---
+
+## Quick Start
+
+All projects are containerized. To run any of them:
+
+```bash
+docker pull pnykiel3/<assignment-name>
+docker run -p 8080:8080 pnykiel3/<assignment-name>
+```
+
+Example:
+```bash
+docker pull pnykiel3/assignment4
+docker run -p 8080:8080 pnykiel3/assignment4
+# API available at http://localhost:8080
+```
+
+---
+
+<details><summary><h2>Wersja Polska 🇵🇱</h2></summary>
+
+### Umiejętności
+
+| Kategoria | Technologie |
+|-----------|-------------|
+| **Języki** | Scala, Haskell, JavaScript |
+| **Koncepcje FP** | Czyste funkcje, Niemutowalność, Funkcje wyższego rzędu, Currying, Pattern Matching |
+| **Systemy typów** | Option/Maybe, Either, Monady, Monoidy, Funktory |
+| **Współbieżność** | Promises, Worker Threads, Maszyny stanów |
+| **DevOps** | Docker, Azure Functions, Azure App Services |
+
+### Projekty
+
+**Scala:**
+- Operacje na listach, funkcje wyższego rzędu, currying
+- REST API z Cask
+- Bezpieczna obsługa błędów (Option/Either)
+- Wzorzec MapReduce
+
+**Haskell:**
+- Czyste funkcje, rekurencja, pattern matching
+- Maszyny stanów, generator liczb losowych
+- Monoidy, Monady, Funktory
+
+**JavaScript:**
+- Promises i programowanie asynchroniczne
+- Worker Threads i równoległe obliczenia
+
+**Chmura:**
+- Azure Functions (JavaScript)
+- Azure App Services (Haskell + Docker)
 
 </details>
